@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Inter', sans-serif;
+}
+
+.info {
+    color: #fff;
+    background-color: hsl(244, 38%, 16%);
+}
+
+.card {
+    width: 375px;
+    height: 90%;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.img-sec {
+    height: 32%;
+    width:100%;
+    background-image: url(images/image-header-mobile.jpg);
+    background-size: cover;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: white;
+    padding: 2rem 1rem;
+    letter-spacing: -1px;
+}
+
+h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+.main-text {
+    font-size: 1rem;
+    padding: 0 3.5rem;
+    color: hsla(0, 0%, 100%, .75);
+}
+
+.statistic {
+    padding: 1.5rem;
+}
+
+.stats span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.stats p {
+    font-size: 12px;
+    font-weight: bold;
+    color: hsla(0, 0%, 100%, .6);
+}
+
+@media (min-width: 1440px) {
+    .card {
+        height: 25rem;
+        width: 60rem;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .img-sec {
+        background-image: url(images/image-header-desktop.jpg);
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .info {
+        text-align: left;
+    }
+
+    .stats {
+        margin: 2rem;
+    }
+
+    .statistic {
+        display: inline-block;
+    }
+
+    h1 {
+        padding: 2rem 3rem;
+    }
+
+    .stats p {
+        font-size: 1rem;
+    }
+}
